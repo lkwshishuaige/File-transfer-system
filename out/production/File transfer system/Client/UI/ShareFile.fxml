@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="143.0" prefWidth="318.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Control.ControlShare">
+   <children>
+      <TextField fx:id="TextFieldFileName" layoutX="108.0" layoutY="33.0" />
+      <TextField fx:id="TextFieldId" layoutX="108.0" layoutY="68.0"/>
+      <Label alignment="CENTER_RIGHT" layoutX="42.0" layoutY="33.0" prefHeight="23.0" prefWidth="66.0" text="文件名：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="36.0" layoutY="68.0" prefHeight="23.0" prefWidth="72.0" text="接收账号：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmButton" layoutX="84.0" layoutY="100.0" mnemonicParsing="false" onAction="#confirm" text="确定">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="189.0" layoutY="100.0" mnemonicParsing="false" onAction="#cancel" text="取消">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

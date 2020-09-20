@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="347.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Control.ControlLogin">
+   <children>
+      <AnchorPane prefHeight="152.0" prefWidth="498.0" style="-fx-background-color: #66ccff;">
+         <children>
+            <Label alignment="CENTER" layoutX="146.0" layoutY="44.0" prefHeight="64.0" prefWidth="207.0" text="登录">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="71.0" layoutY="152.0" prefHeight="125.0" prefWidth="343.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="39.0" prefHeight="30.0" prefWidth="64.0" text="用户名：">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="71.0" prefHeight="30.0" prefWidth="64.0" text="密码：">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userId" layoutX="109.0" layoutY="43.0" />
+            <PasswordField fx:id="userPassword" layoutX="109.0" layoutY="75.0" />
+            <Label fx:id="idPassError" alignment="CENTER_RIGHT" layoutX="109.0" layoutY="104.0" prefHeight="15.0" prefWidth="161.0" />
+         </children>
+      </Pane>
+      <Button fx:id="loginButton" layoutX="137.0" layoutY="277.0" mnemonicParsing="false" onAction="#Login" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #06bcff;" text="登录" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerButton" layoutX="265.0" layoutY="277.0" mnemonicParsing="false" onAction="#Register" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #06bcff;" text="注册" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

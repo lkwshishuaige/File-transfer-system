@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1088.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Control.ControlLogined">
+   <children>
+      <AnchorPane prefHeight="651.0" prefWidth="216.0" style="-fx-background-color: #232323;">
+         <children>
+            <Pane layoutY="85.0" prefHeight="61.0" prefWidth="245.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="5.0" prefHeight="51.0" prefWidth="199.0" text="欢迎" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <VBox layoutY="309.0" prefHeight="342.0" prefWidth="245.0">
+               <children>
+                  <Button fx:id="buttonShare" mnemonicParsing="false" onAction="#ClickShare" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="共享" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonUpdate" mnemonicParsing="false" onAction="#ClickUpdate" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="上传" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonDownload" mnemonicParsing="false" onAction="#ClickDownload" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="下载" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#ClickDelete" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="删除" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonLogout" mnemonicParsing="false" onAction="#ClickLogout" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="注销" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bottonExit" mnemonicParsing="false" onAction="#ClickExit" prefHeight="58.0" prefWidth="253.0" styleClass="button1" stylesheets="@../css/fullpackstyling.css" text="退出" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane layoutY="146.0" prefHeight="61.0" prefWidth="245.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+               <children>
+                  <Label fx:id="userName" alignment="CENTER" layoutX="23.0" layoutY="3.0" prefHeight="51.0" prefWidth="199.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="239.0" layoutY="-172.0" prefHeight="303.0" prefWidth="467.0" rotate="41.6" style="-fx-background-color: #FA2C56; -fx-background-radius: 70;" />
+      <Label fx:id="savedSuccessfully" layoutX="919.0" layoutY="56.0" prefHeight="41.0" prefWidth="122.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="277.0" layoutY="93.0" prefHeight="485.0" prefWidth="775.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="库存文件">
+               <content>
+                  <TableView fx:id="storeFile" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="fileName" prefWidth="212.0" text="文件名称" />
+                        <TableColumn fx:id="fileSize" minWidth="0.0" prefWidth="175.0" text="文件大小" />
+                        <TableColumn fx:id="uploadDate" minWidth="0.0" prefWidth="238.0" text="修改日期" />
+                        <TableColumn fx:id="fileSource" minWidth="0.0" prefWidth="150.0" text="来源" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="buttonRefresh" layoutX="991.0" layoutY="47.0" mnemonicParsing="false" onAction="#refresh" text="刷新" />
+   </children>
+</AnchorPane>
